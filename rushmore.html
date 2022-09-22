@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <title>Rushmore | Vincenzo Trujillo</title>
+
+    <meta charset = "UTF-8">
+    <meta name = "description" content = "Developer & 3D Artist Portfolio">
+    <meta name = "author" content = "Vincenzo Trujillo">
+    <meta name = "keywords" content = "Front End, Back End, Full Stack, Developer, Designer, Programmer, Artist, Media, Software">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap">
+    <link rel = "stylesheet" href = "style.css" type = "text/css">
+  </head>
+
+  <body>
+    <!-- Title Card -->
+    <header class = "rushmore titleCard">
+      <div class = "titleCard__textContainer">
+        <h1 class = "titleCard__mainTitle">Rushmore</h1>
+        <h4 class = "titleCard__subTitle">Case Study | Video Game</h4>
+      </div>
+      <div class = "titleCard__imageContainer">
+        <img class = "titleCard__imageItem" src = "Images/Rushmore/Game Screenshots/Rushmore Cover.png" alt = "Rushmore Game Cover">
+      </div>
+    </header>
+
+    <!-- Abstract -->
+    <section class = "rushmore projectSection">
+      <h2 class = "projectSection__title">Abstract</h2>
+
+      <div class= "projectSection__textContainer">
+        <p class = "projectSection__textItem">
+          <span class = "projectSection__text--bold">Problem:</span> With tight deadlines, our
+          level designers and tech team can’t afford the burden of spending time
+          on tweaking 3D assets or completing mundane tasks. As one of the team leads,
+          it was my responsibility to resolve this issue to spare designers more
+          time to polish the game.
+        </p>
+
+        <p class = "projectSection__textItem">
+          <span class = "projectSection__text--bold">Solution:</span> I facilitated a workflow
+          pipeline on the 3D Artists’ front that foreshadowed potential frictions
+          level designers or the tech team may face without delaying them on tasks
+          or interfering with later changes in the design phases.
+        </p>
+      </div>
+    </section>
+
+    <!-- Background -->
+    <section class = "rushmore projectSection">
+      <h2 class = "projectSection__title">Background</h2>
+
+      <div class = "projectSection__textContainer">
+        <p class = "projectSection__textItem">
+          <span class = "projectSection__text--bold">Role:</span> Technical artist, UI Design, Playtest Research
+        </p>
+
+        <p class = "projectSection__textItem">
+          <span class = "projectSection__text--bold">Medium:</span> Independent Title (Windows / macOS)
+        </p>
+
+        <p class = "projectSection__textItem">
+          <span class = "projectSection__text--bold">Tools:</span> Maya, Unreal Engine, Sketch, Playtests
+        </p>
+
+        <p class = "projectSection__textItem">
+          <span class = "projectSection__text--bold">Delievrables:</span> 3D Assets, Concept Art, Wireframes, High-Fidelity Mockups, Research Data
+        </p>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class = "rushmore projectSection">
+      <h2 class = "projectSection__title">Overview</h2>
+
+      <div class = "projectSection__textContainer">
+        <p class = "projectSection__textItem">
+          Rushmore is a third-person Hack n Slash/Shooter that presents an action-packed experience
+          with a vast array of fun weapons and unique enemies to overcome.
+        </p>
+
+        <p class = "projectSection__textItem">
+          Our target demographic included young adults (ages 12 - 16) that enjoy
+          hack n slash/shooters with a sci-fi aesthetic along with zany themes.
+        </p>
+
+        <p class = "projectSection__textItem">
+          Rushmore puts the players in the shoes of former US Presidents fighting
+          hordes of aliens amidst a neo-futuristic city, bringing about anachronistic humor and action.
+        </p>
+
+        <p class = "projectSection__textItem">
+          The art style is highly stylized with characters presented as caricatures
+          with exaggerated features to convey the out of place humor of the premise.
+        </p>
+
+        <p class = "projectSection__textItem">
+          The stylized neon futuristic setting brings a unique and diverse urban
+          landscape filled with enthralling discoveries in the game world.
+        </p>
+      </div>
+
+      <div class = "projectSection__imageContainer">
+        <div class = "projectSection__imageWrap">
+          <img class = "projectSection__imageItem" src = "Images/Rushmore/Game Screenshots/Rushmore Concept.png" alt = "Rushmore in game image">
+        </div>
+      </div>
+    </section>
+
+    <!-- Development Challenges -->
+    <section class = "rushmore projectSection">
+      <h2 class = "projectSection__title">Development Challenges</h2>
+
+      <div class = "projectSection__textContainer">
+        <p class = "projectSection__textItem">
+          How do we ease the transition of 3D assets imported to Unreal Engine?
+        </p>
+
+        <p class = "projectSection__textItem">
+          To answer this, we turned to our level designers and requested a list of
+          technical issues they ran into whenever artists imported new assets to Unreal Engine.
+        </p>
+
+        <p class = "projectSection__textItem">
+          Although our level designers could fix these issues themselves, it would
+          be taxing on their time and prevent them from dedicating more effort designing in engine.
+        </p>
+
+        <p class = "projectSection__textItem">
+          As a team lead it was my responsibility to address these crucial issues and
+          aid the art team in delivering assets ready to be imported / implemented on the fly.
+        </p>
+
+        <p class = "projectSection__textItem">
+          Instead of requiring designers to spend extra time in engine getting familiar
+          with the 3D assets I saw it best to delegate the solution of these tasks on the artists’ front.
+        </p>
+
+        <h3 class = "projectSection__subHeader">Challenge #1</h3>
+
+        <p class = "projectSection__textItem">
+          Collision meshes not working properly, causing characters to clip with walls and other 3D models.
+        </p>
+
+        <h3 class = "projectSection__subHeader">Solution #1</h3>
+
+        <p class = "projectSection__textItem">
+          When 3D models are imported, they inherently have the tendency to sometimes
+          “protrude” out of the collision meshes that wrap them. This creates a perfect
+          storm for a “clip” scenario, where two models pass through eachother.
+        </p>
+
+        <p class = "projectSection__textItem">
+          While Unreal engine has the ability to “auto-create” collision meshes for
+          3D models when they are imported, the engine by default creates meshes
+          that are too geometrically complex and possibly give unpredictable results when rendered.
+          What we need is a mesh of lower fidelity to keep our game’s rendering requirements feasible.
+        </p>
+
+        <p class = "projectSection__textItem">
+          To remedy this, meshes must be edited / expanded further manually.
+          Fortunately, Unreal Engine has a plug-in feature that conveniently allows
+          us to create collision meshes in the 3D Modeling software Maya.
+        </p>
+
+        <p class = "projectSection__textItem">
+          These smaller simple box meshes can be grouped together with appropriate
+          naming conventions to behave like concave shapes without the need for complex meshes.
+        </p>
+
+        <p class = "projectSection__textItem">
+          Meshes also need a reasonable poly count to render faces smoothly.
+          (While meshes are “invisible” in-game, their poly count still affects game performance!)
+        </p>
+
+        <p class = "projectSection__textItem">
+          Not all 3D models are created equal. Some background objects may never be
+          in range of another object that could collide with it. These objects may not
+          need such careful mesh consideration and accuracy.
+        </p>
+
+        <div class = "projectSection__imageContainer">
+          <div class = "projectSection__imageRow--sort3x1">
+            <img class = "projectSection__imageRowItem" src = "Images/Rushmore/Development/Challenge 1/Collision Simple 1.png" alt = "Simple Collision Image 1">
+            <img class = "projectSection__imageRowItem" src = "Images/Rushmore/Development/Challenge 1/Collision Simple 2.png" alt = "Simple Collision Image 2">
+            <img class = "projectSection__imageRowItem" src = "Images/Rushmore/Development/Challenge 1/Collision Simple 3.png" alt = "Simple Collision Image 3">
+          </div>
+        </div>
+
+        <div class = "projectSection__imageCaption">
+          Simple Collision (Auto generated by Unreal Engine)
+          <br/>
+          Poly Count: 63 Tris
+        </div>
+
+        <div class = "projectSection__imageContainer">
+          <div class = "projectSection__imageRow--sort3x1">
+            <img class = "projectSection__imageRowItem" src = "Images/Rushmore/Development/Challenge 1/Collision Complex 1.png" alt = "Complex Collision Image 1">
+            <img class = "projectSection__imageRowItem" src = "Images/Rushmore/Development/Challenge 1/Collision Complex 2.png" alt = "Complex Collision Image 2">
+            <img class = "projectSection__imageRowItem" src = "Images/Rushmore/Development/Challenge 1/Collision Complex 3.png" alt = "Complex Collision Image 3">
+          </div>
+        </div>
+
+        <div class = "projectSection__imageCaption">
+          Complex Collision (Auto generated by Unreal Engine)
+          <br/>
+          Poly Count: 7336 Tris
+        </div>
+
+        <div class = "projectSection__imageContainer">
+          <div class = "projectSection__imageRow--sort3x1">
+            <img class = "projectSection__imageRowItem" src = "Images/Rushmore/Development/Challenge 1/Collision Custom 1.png" alt = "Custom Collision Image 1">
+            <img class = "projectSection__imageRowItem" src = "Images/Rushmore/Development/Challenge 1/Collision Custom 2.png" alt = "Custom Collision Image 2">
+            <img class = "projectSection__imageRowItem" src = "Images/Rushmore/Development/Challenge 1/Collision Custom 3.png" alt = "Custom Collision Image 3">
+          </div>
+        </div>
+
+        <div class = "projectSection__imageCaption">
+          Custom Collision (Modeled by artist in Maya)
+          <br/>
+          Poly Count: 220 Tris
+        </div>
+
+        <p class = "projectSection__textItem">
+          On the other hand, key objects such as characters, weapons and walls will
+          need to have their meshes thoroughly inspected to ensure they are not “clippable”.
+        </p>
+
+        <p class = "projectSection__textItem">
+          Having the artists follow this work pipeline allowed designers and developers
+          to work simultaneously on different pieces of the same assets to avoid stagnation
+          and cut the time costs of updates by nearly half the labor. In addition to
+          the benefits of time management, it also vastly improved the game’s performance
+          due to simpler collision meshes versus using complex geometric collisions.
+        </p>
+
+        <h3 class = "projectSection__subHeader">Challenge #2</h3>
+
+        <p class = "projectSection__textItem">
+          Hundreds of 3D assets must be scaled accordingly once imported.
+        </p>
+
+        <h3 class = "projectSection__subHeader">Solution #2</h3>
+
+        <p class = "projectSection__textItem">
+          Imported assets are sized arbitrarily. This means that any given modeled
+          object has no technical “size”. Long story short, all these objects must be
+          resized relatively to each other to create a realistic environment!
+        </p>
+
+        <p class = "projectSection__textItem">
+          To do this efficiently over the course of the project (rather than resizing
+          everything at the end) I took the initiative to set up a design system / general guidelines
+          for the artists to adhere to during the process.
+        </p>
+
+        <div class = "projectSection__imageContainer">
+          <div class = "projectSection__imageGrid--sort2x2">
+            <img class = "projectSection__imageGridItem" src = "Images/Rushmore/Development/Challenge 2/Model Scale 1.png" alt = "Showcase size comparison of characters and objects">
+            <img class = "projectSection__imageGridItem" src = "Images/Rushmore/Development/Challenge 2/Model Scale 2.png" alt = "Showcase size comparison of characters and environment">
+            <img class = "projectSection__imageGridItem" src = "Images/Rushmore/Development/Challenge 2/Melee Weapons.png" alt = "Showcase characters with melee weapons">
+            <img class = "projectSection__imageGridItem" src = "Images/Rushmore/Development/Challenge 2/Guns.png" alt = "Showcase guns">
+          </div>
+        </div>
+
+        <h5 class = "projectSection__listHeader">Basic Guidelines</h5>
+        <ol class = "projectSection__list projectSection__text--bold">
+          <li>Max model height = 15m</li>
+          <li>Player character height = 2m</li>
+          <li>Enemy height range = 2.5m - 3.5m</li>
+          <li>Common object models = within 0.5m of life size</li>
+          <li>Models under 0.5 cubic meters cannot exceed 500 triangular poly count</li>
+        </ol>
+
+        <p class = "projectSection__textItem">
+          By setting model parameters early, we prevented any miscommunications
+          and timeline issues from arising. Artists now have a reference point for
+          size and imported objects will not need to be re-manipulated later in the process.
+        </p>
+      </div>
+    </section>
+
+    <!-- Architecture -->
+    <section class = "rushmore projectSection">
+      <h2 class = "projectSection__title">Architecture</h2>
+
+      <div class = "projectSection__textContainer">
+        <p class = "projectSection__textItem">
+          While fleshing out the game’s menu, I created a structured map to represent
+          the UX flow of the menu interface. (Colors indicate similar hierarchical
+          positions for each tab selection (Grey frames indicate intended start / end points.)
+        </p>
+      </div>
+
+      <div class = "projectSection__imageContainer">
+        <div class = "projectSection__imageWrap">
+          <img class = "projectSection__imageItem" src = "Images/Rushmore/Figures/Architecture.png" alt = "User Flow">
+        </div>
+      </div>
+    </section>
+
+    <!-- User Interface -->
+    <section class = "rushmore projectSection">
+      <h2 class = "projectSection__title">User Interface</h2>
+
+      <div class = "projectSection__textContainer">
+        <p class = "projectSection__textItem">
+          The players' Heads Up Display (HUD) was designed to aid players in keeping track of
+          core gameplay information (characters' health, damage output, weapons, items, and navigation).
+        </p>
+
+        <p class = "projectSection__textItem">
+          The interface's content is displayed statically with enough space between UI icons
+          to keep players engaged without requiring them to loose their focal viewpoints on the screen.
+        </p>
+      </div>
+
+      <div class = "projectSection__imageContainer">
+        <div class = "projectSection__imageColumn--sort1x2">
+          <img class = "projectSection__imageColumnItem" src = "Images/Rushmore/HUD/HUD Wireframe.png" alt = "Low-Fidelity Mockup">
+          <img class = "projectSection__imageColumnItem" src = "Images/Rushmore/HUD/HUD Final.png" alt = "High-Fidelity UI in game">
+        </div>
+      </div>
+    </section>
+
+    <!-- Review -->
+    <section class = "rushmore projectSection">
+      <h2 class = "projectSection__title">Review</h2>
+
+      <div class = "projectSection__textContainer">
+        <p class = "projectSection__textItem">
+          This project taught me a lot about being adaptable with teammates to resolve
+          technical blockers that delayed our progress. Solutions for this project
+          really focused on us understanding and balancing the artistic vision while
+          considering the technical scope of the game, so communication was key.
+          Both the designers and artists benefitted a lot from seeing how the other
+          team’s ideas came to life, and in the process, augmented their skill sets by
+          learning about each others’ solution methods. All in all, our great team
+          learned to trust the process while encouraging each other to growing professionally.
+        </p>
+      </div>
+
+      <div class = "projectSection__imageContainer">
+        <div class = "projectSection__imageGrid--sort2x2">
+          <img class = "projectSection__imageGridItem" src = "Images/Rushmore/Game Screenshots/Rushmore Picture 1.jpg" alt = "In game screenshot (1 of 4)">
+          <img class = "projectSection__imageGridItem" src = "Images/Rushmore/Game Screenshots/Rushmore Picture 2.jpg" alt = "In game screenshot (2 of 4)">
+          <img class = "projectSection__imageGridItem" src = "Images/Rushmore/Game Screenshots/Rushmore Picture 3.jpg" alt = "In game screenshot (3 of 4)">
+          <img class = "projectSection__imageGridItem" src = "Images/Rushmore/Game Screenshots/Rushmore Picture 4.jpg" alt = "In game screenshot (4 of 4)">
+        </div>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <!-- <section class = "rushmore projectSection"
+      <p class = "projectSection__textItem">
+        This game is still in development, but the demo is available to play now!
+      </p>
+
+      <h5 class = "projectSection__listHeader">Install instructions</h5>
+
+      <ol>
+        <li>
+          <a href = "Rushmore Demo.zip" download = "Rushmore Demo.zip">
+            <u>Download</u>
+          </a>
+        </li>
+        <li>Unzip and Extract All...</li>
+        <li>Launch "Rushmore"</li>
+      </ol>
+    </section> -->
+  </body>
+</html>

@@ -1,0 +1,230 @@
+/* Global Styling */
+*
+{
+  margin: 0;
+  padding: 0;
+  outline: 1px solid blue;
+  box-sizing: border-box;
+}
+
+img
+{
+  width: 100%;
+  height: 100%;
+}
+
+body
+{
+  background-color: #EFEFEF;
+
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #3A3A3A;
+}
+
+
+/* Title Card Styling */
+.titleCard
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 5% 13.88vw;
+}
+
+.titleCard__textContainer
+{
+
+}
+
+.titleCard__mainTitle
+{
+  font-size: 5.55vw;
+  font-weight: 700;
+}
+
+.titleCard__subTitle
+{
+  font-size: 2.08vw;
+  font-weight: 400;
+}
+
+.titleCard__imageContainer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleCard__imageItem
+{
+  width: 37.89vw;
+  height:  37.89vw;
+}
+
+
+/* Section Styling */
+.projectSection
+{
+  margin: 6.94vw 13.88%;
+}
+
+.projectSection__title
+{
+  margin: 3.47vw 0;
+
+  font-weight: 700;
+  font-size: 3.33vw;
+}
+
+.projectSection__textContainer
+{
+  margin: 3.47vw 0;
+}
+
+.projectSection__imageContainer
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 3.47vw 0;
+}
+
+
+/* Text Styling */
+
+.projectSection__subHeader
+{
+  margin: 3.47vw 0;
+
+  font-weight: 700;
+  font-size: 2.22vw;
+}
+
+.projectSection__textItem
+{
+  margin: 1.39vw 0;
+
+  font-size: 1.11vw;
+}
+
+.projectSection__listHeader
+{
+  margin: 1.39vw 0;
+
+  font-size: 1.11vw;
+  font-weight: 700;
+}
+
+.projectSection__list
+{
+  padding-left: 1.66vw;
+
+  font-size: 1.11vw;
+}
+
+.projectSection__imageCaption
+{
+  display: flex;
+
+  margin: 3.47vw 0;
+
+  font-size: 1.11vw;
+  text-align: center;
+}
+
+.projectSection__text--bold
+{
+  font-weight: 700;
+}
+
+
+/* Image Styling */
+.projectSection__imageWrap
+{
+  display: flex;
+}
+
+.projectSection__imageItem
+{
+  width: 49.97vw;
+  height:  auto;
+}
+
+.projectSection__imageGrid--sort2x2
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3.47vw;
+}
+
+.projectSection__imageGridItem
+{
+  width: 24.98vw;
+  height: 14.02vw;
+}
+
+.projectSection__imageColumn--sort1x2
+{
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 3.47vw;
+}
+
+.projectSection__imageColumnItem
+{
+  width: 49.97vw;
+  height:  auto;
+}
+
+
+/* Image Styling (Rushmore)*/
+.rushmore .projectSection__imageRow--sort3x1
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3.81vw;
+}
+
+.rushmore .projectSection__imageRowItem
+{
+  width: 21.51vw;
+  height: 11.45vw;
+}
+
+
+/* Image Styling (WoW)*/
+.wow .projectSection__imageRow--sort3x1
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10.13vw;
+}
+
+.wow .projectSection__imageRow--sort2x1
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10.13vw;
+}
+
+.wow .projectSection__imageRowItem
+{
+  width: 17.27vw;
+  height: 31.02vw;
+}
+
+.projectSection__kpiFPSImage
+{
+  width: 52.74vw;
+  height: 41.42vw;
+}
+
+.projectSection__kpiStatsImage
+{
+  width: 72.17vw;
+  height: 41.42vw;
+}
