@@ -23,7 +23,6 @@ body
   color: #3A3A3A;
 }
 
-
 /* Title Card Styling */
 .titleCard
 {
@@ -79,12 +78,26 @@ body
   font-size: 3.33vw;
 }
 
+.projectSection__designPhaseContainer
+{
+  margin: 6.94vw 0;
+}
+
 .projectSection__textContainer
 {
   margin: 3.47vw 0;
 }
 
 .projectSection__imageContainer
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 3.47vw 0;
+}
+
+.projectSection__sketchfabContainer
 {
   display: flex;
   flex-direction: column;
@@ -126,11 +139,34 @@ body
   font-size: 1.11vw;
 }
 
+.projectSection__imageTitle
+{
+  display: flex;
+  justify-content: center;
+
+  margin: 0 0 1.38vw;
+
+  font-size: 1.11vw;
+  text-align: center;
+}
+
 .projectSection__imageCaption
 {
   display: flex;
+  justify-content: center;
 
   margin: 3.47vw 0;
+
+  font-size: 1.11vw;
+  text-align: center;
+}
+
+.wow .projectSection__imageCaption
+{
+  display: flex;
+  justify-content: center;
+
+  margin: 3.47vw 0 0;
 
   font-size: 1.11vw;
   text-align: center;
@@ -142,13 +178,37 @@ body
 }
 
 
-/* Image Styling */
+/* Image Styling (General) */
 .projectSection__imageWrap
 {
   display: flex;
 }
 
 .projectSection__imageItem
+{
+  width: 49.97vw;
+  height:  auto;
+}
+
+.projectSection__sketchfabWrap
+{
+  display: flex;
+}
+
+.projectSection__sketchfabItem
+{
+  width: 17.27vw;
+  height: 31.02vw;
+}
+
+.projectSection__imageColumn--sort1x2
+{
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 3.47vw;
+}
+
+.projectSection__imageColumnItem
 {
   width: 49.97vw;
   height:  auto;
@@ -167,21 +227,8 @@ body
   height: 14.02vw;
 }
 
-.projectSection__imageColumn--sort1x2
-{
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 3.47vw;
-}
 
-.projectSection__imageColumnItem
-{
-  width: 49.97vw;
-  height:  auto;
-}
-
-
-/* Image Styling (Rushmore)*/
+/* Image Styling (Rushmore) */
 .rushmore .projectSection__imageRow--sort3x1
 {
   display: grid;
@@ -196,7 +243,7 @@ body
 }
 
 
-/* Image Styling (WoW)*/
+/* Image Styling (WoW) */
 .wow .projectSection__imageRow--sort3x1
 {
   display: grid;
@@ -217,13 +264,38 @@ body
   height: 31.02vw;
 }
 
-.projectSection__kpiFPSImage
+.audience .projectSection__imageRow--sort2x1
 {
-  width: 52.74vw;
-  height: 41.42vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4.51vw;
 }
 
-.projectSection__kpiStatsImage
+.projectSection__bartleImageItem
+{
+  width: 25.68vw;
+  height: 21.86vw;
+}
+
+.projectSection__subjectPoolImageItem
+{
+  width: 41.98vw;
+  height: 21.86vw;
+}
+
+.projectSection__textureItem
+{
+  width: 23.10vw;
+  height: 23.10vw;
+}
+
+.projectSection__fpsImageItem
+{
+  width: 52.74vw;
+  height: 41.43vw;
+}
+
+.projectSection__statsImageItem
 {
   width: 72.17vw;
   height: 41.42vw;

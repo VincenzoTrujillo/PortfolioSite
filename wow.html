@@ -74,7 +74,7 @@
     </section>
 
     <!-- Audience -->
-    <section class = " wow projectSection">
+    <section class = "wow projectSection audience">
       <h2 class = "projectSection__title">Audience</h2>
 
       <div class = "projectSection__textContainer">
@@ -107,8 +107,10 @@
         </ul>
       </div>
 
-      <img class = "projectSection__imageItem" src = "Images/WoW/Figures/Bartle Graph.png" alt = "Image of Bartle Graph">
-      <img class = "projectSection__imageItem" src = "Images/WoW/Figures/Subject Pool Bartle Types.png" alt = "Pie Graph of Subject Pool">
+      <div class = "projectSection__imageRow--sort2x1">
+        <img class = "projectSection__bartleImageItem" src = "Images/WoW/Figures/Bartle Graph.png" alt = "Image of Bartle Graph">
+        <img class = "projectSection__subjectPoolImageItem" src = "Images/WoW/Figures/Subject Pool Bartle Types.png" alt = "Pie Graph of Subject Pool">
+      </div>
 
       <div class = "projectSection__textContainer">
         <p class = "projectSection__textItem">
@@ -170,20 +172,22 @@
       <div class = "projectSection__imageContainer">
         <div class = "projectSection__imageRow--sort2x1">
           <figure>
-            <img class = "projectSection__imageRowItem" src = "Images/WoW/Wireframes/Low-Poly Wireframe.png" alt = "Low-Poly Wireframe of Druid Sword">
-            <figcaption class = "projectSection__imageCaption">
-                Low-Poly
-                <br/>
-                Count: 5040
-            </figcaption>
-          </figure>
-
-          <figure>
             <img class = "projectSection__imageRowItem" src = "Images/WoW/Wireframes/High-Poly Wireframe.png" alt = "High-Poly Wireframe of Druid Sword">
+
             <figcaption class = "projectSection__imageCaption">
                 High-Poly
                 <br/>
                 Count: 10984
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img class = "projectSection__imageRowItem" src = "Images/WoW/Wireframes/Low-Poly Wireframe.png" alt = "Low-Poly Wireframe of Druid Sword">
+
+            <figcaption class = "projectSection__imageCaption">
+                Low-Poly
+                <br/>
+                Count: 5040
             </figcaption>
           </figure>
         </div>
@@ -210,85 +214,109 @@
         </p>
       </div>
 
-      <figure>
-        <img class = "projectSection__imageItem" src = "Images/WoW/Texture Maps/Albedo Texture Map.png" alt = "Albedo Texture Map">
-        <figcaption>
-          <span class = "projectSection__text--bold">Albedo Map Textures</span>
-          <br/>
-          Basic model and color of the reflections on the material.
-        </figcaption>
-      </figure>
+      <div class = "projectSection__imageContainer">
+        <div class = "projectSection__imageRow--sort2x1">
+          <figure>
+            <img class = "projectSection__textureItem" src = "Images/WoW/Texture Maps/Albedo Texture Map.png" alt = "Albedo Texture Map">
 
-      <figure>
-        <img class = "projectSection__imageItem" src = "Images/WoW/Texture Maps/Normal Texture Map.png" alt = "Normal Texture Map">
-        <figcaption>
-          <span class = "projectSection__text--bold">Normal Map Textures</span>
-          <br/>
-          Fake lighting of bumps / dents without increasing poly count. This technique
-          gives our textures the depth.
-        </figcaption>
-      </figure>
+            <figcaption class = "projectSection__imageCaption">
+              <span class = "projectSection__text--bold">Albedo Map Textures</span>
+              Basic model and color of the reflections on the material.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img class = "projectSection__textureItem" src = "Images/WoW/Texture Maps/Normal Texture Map.png" alt = "Normal Texture Map">
+
+            <figcaption class = "projectSection__imageCaption">
+              <span class = "projectSection__text--bold">Normal Map Textures</span>
+              Fake lighting of bumps / dents without increasing poly count. This technique
+              gives our textures the depth.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
     </section>
 
     <!-- Design Phases -->
     <section class = "wow projectSection">
       <h2 class = "projectSection__title">Design Phases</h2>
 
-      <!-- <figure>
-        <img class = "projectSection__imageItem" src = "Images/WoW/Design Phases/Druid Sword/Druid Sword Sketch.jpg" alt = "Druid Sword Sketch">
+      <div class = "projectSection__designPhaseContainer">
+        <div class = "projectSection__imageContainer">
+          <div class = "projectSection__imageRow--sort2x1">
+            <figure>
+              <img class = "projectSection__imageRowItem" src = "Images/WoW/Design Phases/Druid Sword/Druid Sword Sketch.jpg" alt = "Druid Sword Sketch">
 
-        <figcaption>Sketch</figcaption>
-      </figure>
+              <figcaption class = "projectSection__imageCaption">Sketch</figcaption>
+            </figure>
 
-      <figure>
-        <img class = "projectSection__imageItem" src = "Images/WoW/Design Phases/Druid Sword/Druid Sword Model.png" alt = "Druid Sword Untextured Model">
+            <figure>
+              <img class = "projectSection__imageRowItem" src = "Images/WoW/Design Phases/Druid Sword/Druid Sword Model.png" alt = "Druid Sword Untextured Model">
 
-        <figcaption>Untextured Model</figcaption>
-      </figure>
-
-      <figure>
-        <div class = "sketchfab-embed-wrapper">
-          <iframe
-            title = "Druid Sword"
-            frameborder = "0"
-            allowfullscreen mozallowfullscreen = "true"
-            webkitallowfullscreen = "true"
-            allow = "autoplay; fullscreen; xr-spatial-tracking"
-            xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src = "https://sketchfab.com/models/694441cfef2f4c23a0318cb3b1f8f856/embed?autospin=1&autostart=1&camera=0&preload=1"
-            alt = "Druid Sword Finished Model">
-          </iframe>
+              <figcaption class = "projectSection__imageCaption">Untextured Model</figcaption>
+            </figure>
+          </div>
         </div>
 
-        <figcaption>Finished Model</figcaption>
-      </figure>
+        <div class = "projectSection__sketchfabContainer">
+          <div class = "projectSection__sketchfabWrap">
+            <figure>
+              <iframe
+                class = "projectSection__sketchfabItem"
+                title = "Druid Sword"
+                frameborder = "0"
+                allowfullscreen mozallowfullscreen = "true"
+                webkitallowfullscreen = "true"
+                allow = "autoplay; fullscreen; xr-spatial-tracking"
+                xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src = "https://sketchfab.com/models/694441cfef2f4c23a0318cb3b1f8f856/embed?autospin=1&autostart=1&camera=0&preload=1"
+                alt = "Druid Sword Finished Model">
+              </iframe>
 
-      <figure>
-        <img class = "projectSection__imageItem" src = "Images/WoW/Design Phases/Druid Warhammer/Druid Warhammer Sketch.png" alt = "Druid Warhammer Sketch">
+              <figcaption class = "projectSection__imageCaption">Finished Model</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
 
-        <figcaption>Sketch</figcaption>
-      </figure>
+      <div class = "projectSection__designPhaseContainer">
+        <div class = "projectSection__imageContainer">
+          <div class = "projectSection__imageRow--sort2x1">
+            <figure>
+              <img class = "projectSection__imageRowItem" src = "Images/WoW/Design Phases/Druid Warhammer/Druid Warhammer Sketch.png" alt = "Druid Warhammer Sketch">
 
-      <figure>
-        <img class = "projectSection__imageItem" src = "Images/WoW/Design Phases/Druid Warhammer/Druid Warhammer Model.png" alt = "Druid Warhammer Untextured Model">
+              <figcaption class = "projectSection__imageCaption">Sketch</figcaption>
+            </figure>
 
-        <figcaption>Untextured Model</figcaption>
-      </figure>
+            <figure>
+              <img class = "projectSection__imageRowItem" src = "Images/WoW/Design Phases/Druid Warhammer/Druid Warhammer Model.png" alt = "Druid Warhammer Untextured Model">
 
-      <figure>
-        <div class = "sketchfab-embed-wrapper">
-          <iframe
-            title = "Druid Warhammer"
-            frameborder = "0"
-            allowfullscreen mozallowfullscreen = "true"
-            webkitallowfullscreen = "true"
-            allow = "autoplay; fullscreen; xr-spatial-tracking"
-            xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src = "https://sketchfab.com/models/2ec58a9aa83d4465a1db52fe823615a4/embed?autostart=1&preload=1"
-            alt = "Druid Warhammer Finished Model">
-          </iframe>
+              <figcaption class = "projectSection__imageCaption">Untextured Model</figcaption>
+            </figure>
+          </div>
         </div>
 
-        <figcaption>Finished Model</figcaption>
-      </figure> -->
+        <div class = "projectSection__sketchfabContainer">
+          <div class = "projectSection__sketchfabWrap">
+            <figure>
+              <div class = "projectSection__sketchfabWrap">
+                <iframe
+                  class = "projectSection__sketchfabItem"
+                  title = "Druid Warhammer"
+                  frameborder = "0"
+                  allowfullscreen mozallowfullscreen = "true"
+                  webkitallowfullscreen = "true"
+                  allow = "autoplay; fullscreen; xr-spatial-tracking"
+                  xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src = "https://sketchfab.com/models/2ec58a9aa83d4465a1db52fe823615a4/embed?autostart=1&preload=1"
+                  alt = "Druid Warhammer Finished Model">
+                </iframe>
+              </div>
+
+              <figcaption class = "projectSection__imageCaption">Finished Model</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Architecture -->
@@ -359,11 +387,13 @@
         </p>
       </div>
 
-      <figure>
-        <img class = "projectSection__kpiFPSImage" src = "Images/WoW/Figures/KPI FPS Benchmark Test.png" alt = "Bar Graph comparing Frame Rate results">
+      <div class = "projectSection__imageContainer">
+        <div class = "projectSection__imageTitle">Frame Rate Benchmark Results</div>
 
-        <figcaption>Frame Rate Benchmark Results</figcaption>
-      </figure>
+        <div class = "projectSection__imageWrap">
+          <img class = "projectSection__fpsImageItem" src = "Images/WoW/Figures/KPI FPS Benchmark Test.png" alt = "Bar Graph comparing Frame Rate results">
+        </div>
+      </div>
 
       <div class = "projectSection__textContainer">
         <p class = "projectSection__textItem">
@@ -392,7 +422,11 @@
         </ol>
       </div>
 
-      <img class = "projectSection__kpiStatsImage" src = "Images/WoW/Figures/KPI Completion.png" alt = "Table and Bar Graph measuring users' completion tatistics">
+      <div class = "projectSection__imageContainer">
+        <div class = "projectSection__imageWrap">
+          <img class = "projectSection__statsImageItem" src = "Images/WoW/Figures/KPI Completion.png" alt = "Table and Bar Graph measuring users' completion tatistics">
+        </div>
+      </div>
 
       <div class = "projectSection__textContainer">
         <p class = "projectSection__textItem">
@@ -434,7 +468,22 @@
       </div>
     </section>
 
-    <h3>
+    <h1>
       Crop Images
-    </h3>
+    </h1>
+    <h1>
+      Fix Textures Caption
+    </h1>
+    <h1>
+      add arrow icon to development phases
+    </h1>
+    <h1>
+      add arrow icon end of page
+    </h1>
+    <h1>
+      Fix sketchfab background
+    </h1>
+    <h1>
+      Fix sketchfab viewport
+    </h1>
 </html>
